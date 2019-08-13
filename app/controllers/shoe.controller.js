@@ -17,6 +17,8 @@ let isValid = (shoe) => {
         return { isValid: false, propertyInvalid: "barcode" };
     }else if (!shoe.code) {
         return { isValid: false, propertyInvalid: "code" };
+    }else if (!shoe.size) {
+        return { isValid: false, propertyInvalid: "size" };
     }else {
         return { isValid: true, propertyInvalid: undefined }
     }

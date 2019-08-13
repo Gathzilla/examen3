@@ -7,9 +7,7 @@ module.exports = (app) => {
     
     app.get('/api/shoe/:id',  shoes.findOne);
     
-    app.post('/api/shoe',  shoes.create);
-    
-    app.post('/api/register', shoes.create);
+    app.post('/api/shoe',  shoes.create);    
     
     app.put('/api/shoe',  shoes.update);
 
